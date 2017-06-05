@@ -1,0 +1,24 @@
+
+{% extends '::base.html.twig' %}
+
+
+{% block left_article %}
+    <h3>Products</h3>
+    <ul id="products">
+        {% for item in products %}
+            <li><a href="item/{{ item.name }}">{{ item.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block right_article %}
+    <article class="right_article">
+        <h3>Categories</h3>
+        <ul id="categories">
+            {% for item in categories %}
+                <li><a href="catergory/{{ item.name }}">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </article>
+{% endblock %}
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Test Work 1{% endblock %}</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <h1 class="title">Test work 1</h1>
+            </div>
+        </header>
+
+        <section>
+            <article class="left_article">
+                {% block left_article %}{% endblock %}
+            </article>
+
+            {% block right_article %}{% endblock %}
+        </section>
+
+        <div style="clear: both; display: block;" />
+
+        <footer class="footer">
+            <div class="copyright">&copy;2017 Test work 1</div>
+        </footer>
+    </div>
+</body>
+</html>

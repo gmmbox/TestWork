@@ -1,0 +1,11 @@
+acme_hello_homepage:
+    path:     /
+    defaults: { _controller: AcmeHelloBundle:Default:index }
+
+catergory:
+    path:     /catergory/{name}
+    defaults: { _controller: AcmeHelloBundle:Category:index }
+
+item:
+    path:     /item/{name}
+    defaults: { _controller: AcmeHelloBundle:Product:index }

@@ -1,0 +1,11 @@
+
+{% extends '::base.html.twig' %}
+
+
+{% block left_article %}
+    <h2>Продукт: {{ item.name }}</h2>
+    Идентификатор продукта: {{ item.id }}<br />
+    Наименование продукта: {{ item.name }}
+{% endblock %}
+
+{% block right_article %}{% endblock %}
