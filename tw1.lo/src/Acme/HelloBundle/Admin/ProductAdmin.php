@@ -15,11 +15,6 @@ class ProductAdmin extends Admin
     {
         $formMapper
             ->add('name', 'text')
-
-            ->add('category', 'entity', array(
-                'class' => 'Acme\HelloBundle\Entity\Category',
-                'property' => 'name',
-            ))
         ;
     }
 
